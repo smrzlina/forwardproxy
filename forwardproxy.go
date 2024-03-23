@@ -40,7 +40,7 @@ import (
 	caddy "github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/forwardproxy/httpclient"
+	"github.com/smrzlina/forwardproxy/httpclient"
 	"go.uber.org/zap"
 	"golang.org/x/net/proxy"
 )
