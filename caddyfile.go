@@ -135,9 +135,7 @@ func (h *Handler) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 			if len(args) != 1 {
 				return d.ArgErr()
 			}
-			if h.Upstream != "" {
-				return d.Err("upstream directive specified more than once")
-			}
+
 			h.Upstream = args[0]
 		case "acl":
 			for nesting := d.Nesting(); d.NextBlock(nesting); {
